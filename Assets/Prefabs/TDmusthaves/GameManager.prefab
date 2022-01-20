@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6965326811933434445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6965326811933434444}
+  - component: {fileID: 6965326811933434447}
+  - component: {fileID: 6965326811933434446}
+  - component: {fileID: 6965326811933434441}
+  - component: {fileID: 6965326811933434440}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6965326811933434444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965326811933434445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.2234745, y: 1.6352968, z: -25.79774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6965326811933434447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965326811933434445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ac78a1c6d630d48ad733968c5d0daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ready: 0
+  waves:
+  - enemy: {fileID: 2566572321309134897, guid: 86f77645c8966f942bc911fe190c33c2, type: 3}
+    count: 5
+    rate: 1
+  - enemy: {fileID: 2566572321309134897, guid: 86f77645c8966f942bc911fe190c33c2, type: 3}
+    count: 10
+    rate: 5
+  - enemy: {fileID: 2566572321309134897, guid: 86f77645c8966f942bc911fe190c33c2, type: 3}
+    count: 10
+    rate: 5
+  - enemy: {fileID: 2566572321309134897, guid: 86f77645c8966f942bc911fe190c33c2, type: 3}
+    count: 20
+    rate: 10
+  - enemy: {fileID: 2566572321309134897, guid: 86f77645c8966f942bc911fe190c33c2, type: 3}
+    count: 5
+    rate: 50
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 5
+  WaveNumberText: {fileID: 0}
+  TimerText: {fileID: 0}
+  LevelText: {fileID: 0}
+  MoneyText: {fileID: 0}
+  gameManager: {fileID: 6965326811933434441}
+--- !u!114 &6965326811933434446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965326811933434445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e7e8d4f8c689b4e898238aec3c75e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 9977
+  startLives: 123456789
+--- !u!114 &6965326811933434441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965326811933434445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea7dab23c01a58458d9ea9430fd5652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  CompleteLevelUI: {fileID: 0}
+  sceneFader: {fileID: 0}
+--- !u!114 &6965326811933434440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965326811933434445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce3feada3e4e3d4b89dc34a31e02b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 0}
+  sceneFader: {fileID: 0}
+  menuBuildIndex: 0
